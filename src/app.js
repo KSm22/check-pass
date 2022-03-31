@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors())
-app.use('/', auth)
+// app.use('/', auth)
 app.use(express.static(path.join(__dirname + `/public`)));
 app.post('/pass', checkPassword);
 app.get('/top', getTop);

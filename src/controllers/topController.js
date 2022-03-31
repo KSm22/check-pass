@@ -20,9 +20,9 @@ const addTop = async (req, res) => {
         return res.status(404).send("Candidate not found");
     }
 
-    if (topList.length >= 3) {
+    /*if (topList.length >= 3) {
         return res.status(400).send("Топ заполнен")
-    }
+    }*/
 
     const result = await Top.create({name: req.body.name})
 
